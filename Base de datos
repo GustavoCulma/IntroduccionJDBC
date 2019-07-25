@@ -1,0 +1,26 @@
+create database sga;
+use sga;
+
+/*se crea la tabla persona*/
+CREATE TABLE persona(
+id_persona INT NOT NULL AUTO_INCREMENT ,
+nombre VARCHAR(45) NULL ,
+apellido VARCHAR(45) NULL,
+PRIMARY KEY (id_persona)
+);
+
+/*SENTENCIAS INSERT*/
+INSERT INTO persona(nombre, apellido) VALUES('Juan','Perez');
+
+INSERT INTO persona(nombre, apellido) VALUES('Karla','Esparza');
+
+INSERT INTO persona(nombre, apellido) VALUES('Eduardo','Alvarez');
+
+/*SENTENCIAS SELECT*/
+/*SELECT * FROM persona;*/
+
+/*SENTENCIAS UPDATE*/
+UPDATE PERSONA SET nombre = 'Juanito' WHERE id_persona = 1;
+
+/*SENTENCIAS DELETE*/
+DELETE FROM PERSONA WHERE id_persona = 3;
